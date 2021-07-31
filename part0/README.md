@@ -1,5 +1,5 @@
-0.4: new note
-
+## 0.4: new note
+```
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 
 note over server:
@@ -26,8 +26,10 @@ server-->browser: [{ content: "note", date: "yyyy-mm-dd" }, ...]
 note over browser:
 browser executes the event handler that renders notes to display
 end note
+```
 
-0.5: Singe page app
+## 0.5: Singe page app
+```
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
 server-->browser: HTML-code
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
@@ -45,11 +47,14 @@ server-->browser: [{ content: "note", date: "yyyy-mm-dd" }, ...]
 note over browser:
 browser executes the event handler that renders notes to display
 end note
+```
 
-0.6: New note
+## 0.6: New note
+```
 browser->server: HTTP POST https://studies.cs.helsink.fi/exampleapp/new_note_spa
 
 note over browser:
 browser executes event handler that creates a new note and adds it the notes list, then rerenders the notes list
 browser executes js code that sends the new note with an HTTP POST request and content-type JSON to the server.
 end note
+```
